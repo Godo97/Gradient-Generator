@@ -1,0 +1,55 @@
+{ 
+    "name": "Gradient Generator",
+    "short_name": "Gradient",
+    "description": "GENERADOR DE DEGRADADOS EN TIEMPO REAL REALIZADO CON VUE",
+    "background_color": "#ffffff",
+    "theme_color": "#41b883",
+    "start_url": "./?umt_source=web_app_manifest",
+    "scope": "./",
+    "lang": "es",
+    "display": "standalone",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "./IMG/favicon.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "./IMG/icon32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "./IMG/icon64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+        },
+        {
+            "src": "./IMG/icon128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "./IMG/maskable.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "./IMG/icon256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "./IMG/icon512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "./IMG/icon1024.png",
+            "sizes": "1024x1024",
+            "type": "image/png"
+        }
+    ]
+}

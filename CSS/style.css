@@ -1,0 +1,12 @@
+html, body{
+    background-color: #ffffff;
+    text-align: center;
+}
+#setcolor{
+    width: 90%;
+}
+.area{
+    width: 100%;
+    height: 200px;
+
+}

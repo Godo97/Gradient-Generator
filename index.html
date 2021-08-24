@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GENERADOR DE DEGRADADOS EN TIEMPO REAL">
+    <!-- Metadata para PWA -->
+    <meta name="theme-color" content="#ffffff">
+    <!-- Optimizaciones de SEO -->
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <!-- Modificador de barra de estado IOS -->
+    <meta name="mobile-wed-app-capable" content="yes">
+    <meta name="apple-mobile-wed-app-status-bar-style" content="black-translucent">
+
+    <title>Gradient Generator</title>
+
+    <!-- Iconos -->
+    <link rel="shortcut icon" href="./IMG/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="./IMG/favicon.png">
+    <link rel="apple-touch-statup-image" href="./IMG/favicon.png">
+
+    <!-- Manifiesto -->
+    <link rel="manifest" href="./manifest.json">
+
+    <!-- Hojas de estilos -->
+    <!-- <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"> -->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+    
+    <div id="app">
+        <h1>{{title}}</h1>
+        <hr>
+        <form>
+            <label for="color1">
+                Color 1: <input type="color" name="color1" id="color1" v-model="fcolor">
+            </label>
+            <label for="color2">
+                Color 2: <input type="color" name="color2" id="color2" v-model="scolor">
+            </label>
+            <p>HEX 1: {{fcolor}}</p>
+            <p>HEX 2: {{scolor}}</p>
+            <label><input type="text" name="setcolor" id="setcolor" :value="setColor"></label>
+            <hr>
+            <label for="oriRight">
+                <input type="radio" name="oriRight" id="oriRight" value="1" v-model.number="orientation">Right
+            </label>
+            <label for="oriLeft">
+                <input type="radio" name="oriLeft" id="oriLeft" value="2" v-model.number="orientation">Left
+            </label>
+            <label for="oriTop">
+                <input type="radio" name="oriTop" id="oriTop" value="3" v-model.number="orientation">Top
+            </label>
+            <label for="oriBottom">
+                <input type="radio" name="oriBottom" id="oriBottom" value="4" v-model.number="orientation">Bottom
+            </label>
+        </form>
+        <div class="area" :style="setColor"></div>
+    </div>
+
+    <script src="./load.js"></script>
+    <script src="./JS/main.js"></script>
+    <script src="./JS/mountApp.js"></script>
+</body>
+</html>
